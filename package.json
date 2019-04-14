@@ -2,9 +2,12 @@
   "name": "with-styled-components",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
+    "prestart": "next build",
     "build": "next build",
-    "start": "next start"
+    "postinstall": "yarn run build",
+    "heroku-postbuild": "next build",
+    "start": "node server.js -p ${PORT}"
   },
   "dependencies": {
     "firebase": "^5.9.4",
