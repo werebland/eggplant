@@ -10,6 +10,7 @@
     "firebase": "^5.9.4",
     "geolocation-utils": "^1.2.1",
     "lodash": "^4.17.11",
+    "moment": "^2.24.0",
     "next": "^8.0.4",
     "re-base": "^4.0.0",
     "react": "^16.8.6",
