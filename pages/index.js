@@ -31,14 +31,14 @@ class Index extends Component {
   componentDidMount() {
     if (navigator) {
       navigator.geolocation.getCurrentPosition(function(position) {
-        this.loadProfiles(position.coords.latitude, position.coords.longitude);
+        this.processProfiles(position.coords.latitude, position.coords.longitude);
       }.bind(this))
     } else {
       alert('location disabled')
     }
   }
 
-  loadProfiles(lat, lng) {
+  processProfiles(lat, lng) {
     const userLocation = {
       lat,
       lng
@@ -132,7 +132,7 @@ class Index extends Component {
   render() {
     return (
       <AppWrapper>
-        Test
+        <span onClick={() => this.handleAuth()}>Log in with Facebook</span>
       </AppWrapper>
     );
   }
