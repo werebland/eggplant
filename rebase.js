@@ -15,6 +15,8 @@ if (!firebase.apps.length) {
   var app = firebase
 }
 
+console.log(process.env.FIREBASE_API);
+
 var db = firebase.firestore(app);
 var base = Rebase.createClass(db);
 

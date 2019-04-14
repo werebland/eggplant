@@ -6,6 +6,7 @@ import _ from 'lodash'
 import firebase from 'firebase'
 import 'firebase/auth'
 import base from '../rebase'
+import moment from 'moment'
 
 import AppBar from '../components/AppBar'
 
@@ -127,6 +128,10 @@ class Index extends Component {
       var credential = error.credential;
       // ...
     });
+  }
+
+  handleActive(activeEnd) {
+    let activeStart = moment.format('HHmm')
   }
 
   render() {

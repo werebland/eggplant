@@ -451,7 +451,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! firebase/auth */ "firebase/auth");
 /* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(firebase_auth__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _rebase__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../rebase */ "./rebase.js");
-/* harmony import */ var _components_AppBar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/AppBar */ "./components/AppBar.jsx");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _components_AppBar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/AppBar */ "./components/AppBar.jsx");
+
 
 
 
@@ -499,15 +502,15 @@ function (_Component) {
     value: function componentDidMount() {
       if (navigator) {
         navigator.geolocation.getCurrentPosition(function (position) {
-          this.loadProfiles(position.coords.latitude, position.coords.longitude);
+          this.processProfiles(position.coords.latitude, position.coords.longitude);
         }.bind(this));
       } else {
         alert('location disabled');
       }
     }
   }, {
-    key: "loadProfiles",
-    value: function loadProfiles(lat, lng) {
+    key: "processProfiles",
+    value: function processProfiles(lat, lng) {
       var userLocation = {
         lat: lat,
         lng: lng
@@ -589,9 +592,20 @@ function (_Component) {
       });
     }
   }, {
+    key: "handleActive",
+    value: function handleActive(activeEnd) {
+      var activeStart = moment__WEBPACK_IMPORTED_MODULE_13___default.a.format('HHmm');
+    }
+  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(AppWrapper, null, "Test");
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(AppWrapper, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        onClick: function onClick() {
+          return _this2.handleAuth();
+        }
+      }, "Log in with Facebook"));
     }
   }]);
 
@@ -634,6 +648,7 @@ if (!firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a.apps.length) {
   var app = firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a;
 }
 
+console.log(process.env.FIREBASE_API);
 var db = firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a.firestore(app);
 var base = re_base__WEBPACK_IMPORTED_MODULE_0___default.a.createClass(db);
 /* harmony default export */ __webpack_exports__["default"] = (base);
@@ -781,6 +796,17 @@ module.exports = require("geolocation-utils");
 /***/ (function(module, exports) {
 
 module.exports = require("lodash");
+
+/***/ }),
+
+/***/ "moment":
+/*!*************************!*\
+  !*** external "moment" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("moment");
 
 /***/ }),
 
