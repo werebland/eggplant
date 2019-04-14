@@ -7,9 +7,7 @@ import firebase from 'firebase'
 import 'firebase/auth'
 import base from '../rebase'
 
-import ProfileFeed from '../components/ProfileFeed'
 import AppBar from '../components/AppBar'
-import Splash from '../components/Splash'
 
 const AppWrapper = styled.div`
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -134,15 +132,7 @@ class Index extends Component {
   render() {
     return (
       <AppWrapper>
-        {this.state.isAuthed
-          ?
-          <React.Fragment>
-            <AppBar />
-            <ProfileFeed profiles={this.state.profiles} handleLike={(id, index) => this.handleLike(id, index)} />
-          </React.Fragment>
-          :
-          <Splash handleAuth={() => this.handleAuth()}/>
-        }
+        Test
       </AppWrapper>
     );
   }

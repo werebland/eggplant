@@ -20,6 +20,11 @@
       "static/runtime/webpack-fdce77a122c11e06ae50.js",
       "static/chunks/commons.934de2bd15743ffd0266.js",
       "static/runtime/main-784994c3bcfb5fefec5b.js"
+    ],
+    "/profile": [
+      "static/runtime/webpack-fdce77a122c11e06ae50.js",
+      "static/chunks/commons.934de2bd15743ffd0266.js",
+      "static/runtime/main-784994c3bcfb5fefec5b.js"
     ]
   }
 }
