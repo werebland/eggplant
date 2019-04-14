@@ -10,6 +10,7 @@
     "start": "node server.js -p ${PORT}"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "firebase": "^5.9.4",
     "geolocation-utils": "^1.2.1",
     "lodash": "^4.17.11",

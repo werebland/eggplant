@@ -14,7 +14,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
-var _jsxFileName = "/Users/Chris/eggplant/components/AppBar.jsx";
 
 
 var AppBarContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
@@ -29,417 +28,10 @@ var ProfilePhoto = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div
 var AppBar = function AppBar(_ref) {
   Object(_babel_runtime_corejs2_helpers_esm_objectDestructuringEmpty__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref);
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AppBarContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProfilePhoto, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }), "Discover");
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AppBarContainer, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ProfilePhoto, null), "Discover");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AppBar);
-
-/***/ }),
-
-/***/ "./components/ProfileCard.jsx":
-/*!************************************!*\
-  !*** ./components/ProfileCard.jsx ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-pose */ "./node_modules/react-pose/dist/react-pose.es.js");
-
-
-
-
-
-var _jsxFileName = "/Users/Chris/eggplant/components/ProfileCard.jsx";
-
-
-
-var profileCardPose = {
-  enter: {
-    opacity: 1,
-    y: 0,
-    x: 0
-  },
-  exit: {
-    opacity: 0,
-    x: 64
-  },
-  preEnter: {
-    opacity: 0,
-    y: 32
-  }
-};
-var ProfileCardContainer = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].article.withConfig({
-  displayName: "ProfileCard__ProfileCardContainer",
-  componentId: "sc-1hs62zf-0"
-})(["width:100%;max-width:375px;height:274px;border-radius:8px;border:2px solid #fff;box-sizing:border-box;display:inline-flex;flex-flow:column nowrap;justify-content:space-between;overflow:hidden;box-shadow:0 2px 16px -2px rgba(159,159,159,0.50);background-image:url(", ");background-size:cover;background-position:center;font-family:sans-serif;margin-bottom:16px;position:relative;"], function (props) {
-  return props.image;
-});
-var ProfileCardPhotoIndicators = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
-  displayName: "ProfileCard__ProfileCardPhotoIndicators",
-  componentId: "sc-1hs62zf-1"
-})(["display:flex;flex-flow:row nowrap;align-items:center;padding:4px 16px;box-sizing:border-box;position:relative;z-index:8;"]);
-var ProfileCardPhotoIndicator = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
-  displayName: "ProfileCard__ProfileCardPhotoIndicator",
-  componentId: "sc-1hs62zf-2"
-})(["height:2px;display:flex;flex:1;border-radius:8px;background:#fff;opacity:", ";margin-right:6px;cursor:pointer;&:last-of-type{margin-right:0;}"], function (props) {
-  return props.active ? '1' : '.42';
-});
-var ProfileCardPhotoNavigator = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
-  displayName: "ProfileCard__ProfileCardPhotoNavigator",
-  componentId: "sc-1hs62zf-3"
-})(["position:absolute;top:0;right:0;bottom:0;left:0;z-index:1;display:flex;flex-flow:row nowrap;& div{height:100%;flex:1;}"]);
-var ProfileCardLower = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
-  displayName: "ProfileCard__ProfileCardLower",
-  componentId: "sc-1hs62zf-4"
-})(["width:100%;height:92px;background-image:linear-gradient(-180deg,rgba(0,0,0,0.00) 0%,rgba(47,47,47,0.42) 100%);display:flex;flex-flow:row nowrap;align-items:center;justify-content:space-between;padding:0 16px;box-sizing:border-box;position:relative;z-index:8;"]);
-var ProfileCardDetails = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
-  displayName: "ProfileCard__ProfileCardDetails",
-  componentId: "sc-1hs62zf-5"
-})(["flex-flow:column nowrap;"]);
-var ProfileCardTitle = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].h3.withConfig({
-  displayName: "ProfileCard__ProfileCardTitle",
-  componentId: "sc-1hs62zf-6"
-})(["font-size:1.5rem;font-weight:500;color:#fff;margin:0;& strong{font-weight:700;margin-right:4px;}"]);
-var ProfileCardSubtitle = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].h5.withConfig({
-  displayName: "ProfileCard__ProfileCardSubtitle",
-  componentId: "sc-1hs62zf-7"
-})(["font-size:1.25rem;font-weight:500;color:#fff;margin:0;"]);
-var ProfileCardButton = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
-  displayName: "ProfileCard__ProfileCardButton",
-  componentId: "sc-1hs62zf-8"
-})(["width:56px;height:56px;border-radius:50%;background:#fff;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;& svg{fill:#f94343;transform:scale(1.33)}"]);
-
-var ProfileCard =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(ProfileCard, _Component);
-
-  function ProfileCard(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, ProfileCard);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(ProfileCard).call(this, props));
-    _this.state = {
-      activePhoto: 0,
-      isLiking: false
-    };
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(ProfileCard, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var _this$props = this.props,
-          profile = _this$props.profile,
-          handleLike = _this$props.handleLike,
-          index = _this$props.index;
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardContainer, {
-        image: profile.photos[this.state.activePhoto],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 148
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardPhotoIndicators, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 149
-        },
-        __self: this
-      }, profile.photos.map(function (photo, i) {
-        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardPhotoIndicator, {
-          key: i,
-          active: _this2.state.activePhoto === i,
-          onClick: function onClick() {
-            return _this2.setState({
-              activePhoto: i
-            });
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 151
-          },
-          __self: this
-        });
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardLower, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 154
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardDetails, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 155
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardTitle, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 156
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("strong", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 157
-        },
-        __self: this
-      }, profile.name), profile.age), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardSubtitle, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 162
-        },
-        __self: this
-      }, _.round(profile.distance / 1000, 1), "km")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardButton, {
-        onClick: function onClick() {
-          return handleLike(profile.id, index);
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 166
-        },
-        __self: this
-      }, this.state.isLiking ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("svg", {
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 169
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("path", {
-        fill: "none",
-        d: "M0 0h24v24H0V0z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 169
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("path", {
-        d: "M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 169
-        },
-        __self: this
-      })) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("svg", {
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 171
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("path", {
-        fill: "none",
-        d: "M0 0h24v24H0V0z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 172
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("path", {
-        d: "M13.35 20.13c-.76.69-1.93.69-2.69-.01l-.11-.1C5.3 15.27 1.87 12.16 2 8.28c.06-1.7.93-3.33 2.34-4.29 2.64-1.8 5.9-.96 7.66 1.1 1.76-2.06 5.02-2.91 7.66-1.1 1.41.96 2.28 2.59 2.34 4.29.14 3.88-3.3 6.99-8.55 11.76l-.1.09z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 173
-        },
-        __self: this
-      })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(ProfileCardPhotoNavigator, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 178
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        onClick: function onClick() {
-          return _this2.state.activePhoto > 0 && _this2.setState({
-            activePhoto: _this2.state.activePhoto - 1
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 179
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        onClick: function onClick() {
-          return _this2.state.activePhoto !== profile.photos.length - 1 && _this2.setState({
-            activePhoto: _this2.state.activePhoto + 1
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 180
-        },
-        __self: this
-      })));
-    }
-  }]);
-
-  return ProfileCard;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (ProfileCard);
-
-/***/ }),
-
-/***/ "./components/ProfileFeed.jsx":
-/*!************************************!*\
-  !*** ./components/ProfileFeed.jsx ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-pose */ "./node_modules/react-pose/dist/react-pose.es.js");
-/* harmony import */ var _ProfileCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProfileCard */ "./components/ProfileCard.jsx");
-var _jsxFileName = "/Users/Chris/eggplant/components/ProfileFeed.jsx";
-
-
-
-
-var profileFeedPose = {
-  enter: {
-    opacity: 1,
-    staggerChildren: 300
-  },
-  exit: {
-    opacity: 0
-  }
-};
-var ProfileFeedWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "ProfileFeed__ProfileFeedWrapper",
-  componentId: "sc-1b1xbtc-0"
-})(["display:flex;flex-flow:column nowrap;padding:0 16px;box-sizing:border-box;"]);
-
-var ProfileFeed = function ProfileFeed(_ref) {
-  var profiles = _ref.profiles,
-      _handleLike = _ref.handleLike;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProfileFeedWrapper, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, profiles.length > 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, profiles.map(function (profile, i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProfileCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      profile: profile,
-      index: i,
-      key: profile.id,
-      handleLike: function handleLike(id, i) {
-        return _handleLike(id, i);
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    });
-  })) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, "loading..."));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ProfileFeed);
-
-/***/ }),
-
-/***/ "./components/Splash.jsx":
-/*!*******************************!*\
-  !*** ./components/Splash.jsx ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/Users/Chris/eggplant/components/Splash.jsx";
-
-
-var SplashContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
-  displayName: "Splash__SplashContainer",
-  componentId: "sc-1e94rkw-0"
-})(["width:100vw;height:100vh;background-image:linear-gradient(-42deg,#845EC2 0%,#C493FF 100%);color:#fff;"]);
-
-var Splash = function Splash(_ref) {
-  var handleAuth = _ref.handleAuth;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SplashContainer, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Welcome to", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }), "Instant Connections", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    onClick: function onClick() {
-      return handleAuth();
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "Log in with Facebook"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Splash);
 
 /***/ }),
 
@@ -81991,15 +81583,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/index.esm.js");
 /* harmony import */ var _rebase__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../rebase */ "./rebase.js");
-/* harmony import */ var _components_ProfileFeed__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/ProfileFeed */ "./components/ProfileFeed.jsx");
-/* harmony import */ var _components_AppBar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/AppBar */ "./components/AppBar.jsx");
-/* harmony import */ var _components_Splash__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/Splash */ "./components/Splash.jsx");
+/* harmony import */ var _components_AppBar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/AppBar */ "./components/AppBar.jsx");
 
 
 
-
-
-var _jsxFileName = "/Users/Chris/eggplant/pages/index.js";
 
 
 
@@ -82136,46 +81723,7 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(AppWrapper, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 136
-        },
-        __self: this
-      }, this.state.isAuthed ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 139
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_AppBar__WEBPACK_IMPORTED_MODULE_14__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 140
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_ProfileFeed__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        profiles: this.state.profiles,
-        handleLike: function handleLike(id, index) {
-          return _this2.handleLike(id, index);
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 141
-        },
-        __self: this
-      })) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_Splash__WEBPACK_IMPORTED_MODULE_15__["default"], {
-        handleAuth: function handleAuth() {
-          return _this2.handleAuth();
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 144
-        },
-        __self: this
-      }));
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(AppWrapper, null, "Test");
     }
   }]);
 
@@ -82195,7 +81743,7 @@ function (_Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var re_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! re-base */ "./node_modules/re-base/index.js");
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var re_base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! re-base */ "./node_modules/re-base/index.js");
 /* harmony import */ var re_base__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(re_base__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/index.cjs.js");
 /* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_1__);
@@ -82206,7 +81754,7 @@ __webpack_require__.r(__webpack_exports__);
 
 if (!firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a.apps.length) {
   var app = firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializeApp({
-    apiKey: "AIzaSyCWP9oQmSJaPRn4iMH5CMn8KnluP4syT3Q",
+    apiKey: process.env.FIREBASE_API,
     authDomain: "bland-eggplant.firebaseapp.com",
     databaseURL: "https://bland-eggplant.firebaseio.com",
     projectId: "bland-eggplant",
@@ -82220,6 +81768,7 @@ if (!firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a.apps.length) {
 var db = firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a.firestore(app);
 var base = re_base__WEBPACK_IMPORTED_MODULE_0___default.a.createClass(db);
 /* harmony default export */ __webpack_exports__["default"] = (base);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
